@@ -1,11 +1,7 @@
-import express from 'express';
 import 'reflect-metadata';
-import { createConnection } from 'typeorm';
-import {AppDataSource} from "./data-source"
+import { AppDataSource } from './db/data-source';
+import app from './app';
 
-const app = express();
-
-app.use(express.json());
 
 
 AppDataSource.initialize()
